@@ -1,0 +1,31 @@
+@import "mixins";
+@import "components/index";
+
+.story {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: $default-padding;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgb(227, 227, 227);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // background-color: rgb(246, 243, 243);
+    // min-height: 100vh;
+  }
+}

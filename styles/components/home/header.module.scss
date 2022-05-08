@@ -1,0 +1,25 @@
+@import "../../mixins";
+@import "../../components/index";
+
+
+.header {
+    padding: $default-padding;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+.title {
+    font-family: $title-font;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding-top: 0.3rem;
+}
